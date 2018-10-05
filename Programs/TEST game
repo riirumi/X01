@@ -153,13 +153,22 @@ int main()
 		slow_print(message_22, 20);
 		color1;
 	string message23 = "Yes! The Text World!";
-	sleep(1);
+		slow_print(message23, 40);
+		color1;
 	string message24 = "It is a space where the 'void' is just pure black and white";
-	sleep(1);
+		slow_print(message24, 40);
+		color1;
 	string message25 = "But formally, this space is called the 'Command Promt World'";
-	sleep(1);
-	color2
+		slow_print(message25, 40);
+		color2
 	string message26 = "W-what? I don't understand";
+		slow_print(message26, 40);
+		color1;
+	string message27 = "Well you don't have to, just go with the flow!";
+		slow_print(message27, 40);
+		color1;
+	string message28 = "Example what is 'int'?";
+		slow_print(message28, 40);
 	return 0;
 	}
 }
