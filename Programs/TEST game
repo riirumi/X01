@@ -1,0 +1,176 @@
+#include <iostream>
+#include <thread>
+#include <chrono>
+#include <unistd.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <string>
+using namespace std;
+
+#define color1 SetConsoleTextAttribute(hConsole, u);
+#define color2 SetConsoleTextAttribute(hConsole, m);
+
+//color1 = NPC
+//color2 = PLAYER
+
+using std::cout;
+using std::flush;
+using std::string;
+using std::this_thread::sleep_for;
+using std::chrono::milliseconds;
+
+
+// Forward slow print
+void slow_print(const string&, unsigned int);
+
+
+
+int main()
+{
+	int rand(); //(rand() %10) + 1		meaning from 1 to 10
+	string name;
+	HANDLE hConsole;
+	int u;
+	int m;
+	
+	
+	
+	hConsole=GetStdHandle (STD_OUTPUT_HANDLE);
+	for(u=11; m=15;)
+
+	{
+		color1
+	string message = "Hello!\n";
+		slow_print(message, 0);
+	sleep(1);
+	cout<<"."<<endl;
+	sleep(1);
+	cout<<"."<<endl;
+	sleep(1);
+	cout<<"."<<endl;
+	sleep(1);
+	cout<<"."<<endl;
+	sleep(1);
+	string message2 = "Oh! I'm sorry! ";
+		slow_print(message2, 50);
+	sleep(1);
+	string message_2 = "I forgot to tell you that you died? Yeeeey (^o^)/ \n";
+		slow_print(message_2, 20);
+	sleep(1);
+	string message3 = "Hmm? ";
+		slow_print(message3, 50);
+	sleep(1); 
+	string message_3 = "Not satisfied with living? ";
+		slow_print(message_3, 70);
+	sleep(1);
+	string message__3 = "Too bad!\n";
+		slow_print(message__3, 40);
+	sleep(1);
+		color2
+	string message4 = "What the hell is going on here?!\n";
+		slow_print(message4, 30);
+	sleep(1);
+	string message5 = "Why am I here?! ";
+		slow_print(message5, 30);
+	string message_5 = "Actually, ";
+		slow_print(message_5, 30);
+	sleep(1);
+	string message__5 = "where am I?!\n";
+		slow_print(message__5, 30);
+	sleep(1);
+		color1
+	string message6 = "Hahaha, you've died silly!\n";
+		slow_print(message6, 40);
+	sleep(1);
+		color2
+	string message7 = "W-what...?\n";
+		slow_print(message7, 60);
+	sleep(1);
+	string message8 = "I... I died?\n";
+		slow_print(message8, 70);
+	sleep(2);
+		color1
+	string message9 = "That's correct!\n";
+		slow_print(message9, 30);
+	sleep(1);
+	string message10 = "You died via being a 'wizard' for a long time!\n";
+		slow_print(message10, 40);
+	sleep(1);
+		color2
+	string message11 = "W-wait what?! I died just because I became a 'wizard'?!\n";
+		slow_print(message11, 30);
+	sleep(1);
+	string message12 = "What kind of BS logic is that?!\n";
+		slow_print(message12, 30);
+	sleep(2);
+		color1
+	string message13 = "Well that's how you really died!\n";
+		slow_print(message13, 40);
+		color2
+	string message14 = "What the hell...\n";
+		slow_print(message14, 30);
+	sleep(1);
+		color1
+	string message15 = "But don't worry! You can escape this space if you agree to my terms.\n";
+		slow_print(message15, 40);
+	sleep(1);
+		color2
+	string message16 = "And those are";
+		slow_print(message16, 30);
+	cout<<".";
+	sleep(1);
+	cout<<".";
+	sleep(1);
+	cout<<".";
+	sleep(1);
+	cout<<"?"<<endl;
+	sleep(1);
+		color1
+	string message17 = "To know programming!\n";
+		slow_print(message17, 30);
+	sleep(1);
+		color2
+	string message18 = "Pro... Programming?\n";
+		slow_print(message18, 50);
+	sleep(1);
+		color1
+	string message19 = "Yes, programming!\n";
+		slow_print(message19, 30);
+	sleep(1);
+		color2
+	string message20 = "I-I don't understand... What do you mean by knowing programming?\n";
+		slow_print(message20, 40);
+	sleep(1);
+		color1
+	string message21 = "Easy! In this space it's called the Console Text World\n";
+		slow_print(message21, 30);
+	sleep(1);
+		color2;
+	string message22 = "Text... ";
+		slow_print(message22, 10);
+		color2;
+	string message_22 = "World?";
+		slow_print(message_22, 20);
+		color1;
+	string message23 = "Yes! The Text World!";
+	sleep(1);
+	string message24 = "It is a space where the 'void' is just pure black and white";
+	sleep(1);
+	string message25 = "But formally, this space is called the 'Command Promt World'";
+	sleep(1);
+	color2
+	string message26 = "W-what? I don't understand";
+	return 0;
+	}
+}
+// Implement slow_print
+void slow_print(const string& message, unsigned int millis_per_char)
+{
+    for (const char c: message)
+    {
+        cout << c << flush;
+        sleep_for(milliseconds(millis_per_char));
+    }
+}
+
+
