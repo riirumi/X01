@@ -1,0 +1,95 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int value;
+	char b;
+	char c;
+	char y;
+	char Y;
+	char n;
+	char N;
+
+
+	cout<<"Is is a banknote? Or a coin?";
+	cin>>b;
+	
+	if(b=b)
+	switch(b)
+	{
+	{
+	cout<<"Please enter the value of your money: ";
+	cin>>value;
+	
+	cout<<"Is it in centavos? (Y/N)";
+	
+	if(Y||y)
+	case'1':
+	cout<<"This coin doesn't have any face on it";
+	break;
+	
+	case'5':
+	cout<<"This coin doesn't have any face on it";
+	break;
+	
+	case'25':
+	cout<<"This coin doesn't have any face on it";
+	break;
+	}
+	else
+	switch(b)
+	{
+	case'1':
+	cout<<"This coin has the face of Jose Rizal";
+	break;
+	
+	case'5':
+	cout<<"This coin has the face of Andres Bonifacio";
+	break;
+	
+	case'10':
+	cout<<"This coin has the face of Apolinario Mabini";
+	break;
+	
+	default:
+	cout<<"Are you sure this is a coin? Or are you playing games?";
+	break;
+	}
+	}
+	char a;
+	elseif(b=a)
+	switch(a)
+	{
+	case'20':
+	cout<<"This has the face of Manuel L. Quezon";
+	break;
+	
+	case'50':
+	cout<<"This has the face of Sergio Osmena";
+	break;
+	
+	case'100':
+	cout<<"This has the face of Manuel A. Roxas";
+	break;
+	
+	case'200':
+	cout<<"This has the face of Diosdado P. Macapagal";
+	break;
+	
+	case'500':
+	cout<<"This has the face of Corazon C. Aquino";
+	break;
+	
+	case'1000':
+	cout<<"This has the faces of Jose Abad Santos, Vicente Lim, and Josefa Llanes Escoda";
+	break;
+	
+	default:
+	cout<<"Is this really a banknote? Or are you just playing games?";
+	break;
+	}	
+	
+
+		return 0;
+}
